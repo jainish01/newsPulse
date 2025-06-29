@@ -16,11 +16,12 @@ A modern Android app built with Jetpack Compose that fetches and displays the la
 ---
 
 ## 🖥️ App ScreenShots
+
+![WhatsApp Image 2025-06-29 at 15 25 34](https://github.com/user-attachments/assets/42fc4b2b-017b-453c-8138-bbaf24fc2e89)
+![WhatsApp Image 2025-06-29 at 15 25 34 (1)](https://github.com/user-attachments/assets/6d5f39ca-1322-4abc-82d2-38e14edd700a)
+![WhatsApp Image 2025-06-29 at 15 25 34 (2)](https://github.com/user-attachments/assets/ae9af7c7-02bd-4e43-975f-1163128b2393)
 ![WhatsApp Image 2025-06-29 at 15 25 35](https://github.com/user-attachments/assets/d553db5f-ec95-491b-ba73-344ee984b1f7)
 ![WhatsApp Image 2025-06-29 at 15 25 35 (1)](https://github.com/user-attachments/assets/63d607a2-c705-4330-beeb-a43505cb3db1)
-![WhatsApp Image 2025-06-29 at 15 25 34](https://github.com/user-attachments/assets/42fc4b2b-017b-453c-8138-bbaf24fc2e89)
-![WhatsApp Image 2025-06-29 at 15 25 34 (2)](https://github.com/user-attachments/assets/ae9af7c7-02bd-4e43-975f-1163128b2393)
-![WhatsApp Image 2025-06-29 at 15 25 34 (1)](https://github.com/user-attachments/assets/6d5f39ca-1322-4abc-82d2-38e14edd700a)
 
 ---
 
