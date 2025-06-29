@@ -63,9 +63,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.compose.material)
-    implementation(libs.accompanist.swiperefresh.v0332alpha) // or latest version
+    implementation(libs.accompanist.swiperefresh.v0332alpha)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.accompanist.swiperefresh)
     implementation(libs.androidx.paging.compose)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
@@ -78,7 +77,10 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.work.ktx)
-    implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation(libs.coil.compose)
+    implementation (libs.androidx.paging.runtime)
+    implementation (libs.androidx.paging.compose.v330)
+    implementation (libs.androidx.room.paging)
 
 
     testImplementation(libs.junit)
@@ -91,5 +93,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    testImplementation(kotlin("test"))
 
 }

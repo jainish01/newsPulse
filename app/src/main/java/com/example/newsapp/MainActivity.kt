@@ -144,7 +144,7 @@ fun AppNavGraph(
                 }
             }
             composable("saved") {
-                val savedArticles = viewModel.savedArticles.collectAsState().value
+
                 BaseScreenScaffold(
                     title = "Saved Articles",
                     showBackButton = false,
@@ -152,7 +152,7 @@ fun AppNavGraph(
                     showBottomBar = true
                 ) { padding ->
                     SavedArticleScreen(
-                        articles = savedArticles,
+                        viewModel,
                         onArticleClick = {
                             viewModel.selectArticle(it)
                             navController.navigate("detail")

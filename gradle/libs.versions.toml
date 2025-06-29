@@ -1,6 +1,7 @@
 [versions]
 accompanistSwiperefresh = "0.33.2-alpha"
 agp = "8.9.2"
+coilCompose = "2.7.0"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
 junit = "4.13.2"
@@ -9,16 +10,23 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.9.1"
 activityCompose = "1.10.1"
 composeBom = "2025.06.01"
+pagingCompose = "3.3.0"
+pagingRuntime = "3.3.6"
 retrofit = "2.11.0"
 room = "2.7.2"
 hilt = "2.51.1"
 compose-material = "1.8.3"
 compose-pullrefresh = "1.1.0-alpha04"
+roomPaging = "2.7.2"
 
 [libraries]
 #noinspection SimilarGradleDependency
 accompanist-swiperefresh-v0332alpha = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-paging-compose-v330 = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
+androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
+androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomPaging" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

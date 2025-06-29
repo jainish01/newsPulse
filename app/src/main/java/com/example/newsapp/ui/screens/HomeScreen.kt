@@ -6,6 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.paging.LoadState
+import androidx.paging.compose.collectAsLazyPagingItems
 import com.example.newsapp.data.model.Article
 import com.example.newsapp.ui.HomeViewModel
 import com.example.newsapp.ui.views.ArticleList
@@ -18,14 +20,14 @@ fun HomeScreen(
     viewModel: HomeViewModel = hiltViewModel(),
     onArticleClick: (Article) -> Unit
 ) {
-    val state = viewModel.homeArticles.collectAsState().value
-    val isRefreshing = state is Resource.Loading
+    val articles= viewModel.homePagingFlow.collectAsLazyPagingItems()
+    val isRefreshing = articles.loadState.refresh is LoadState.Loading
 
     ArticleList(
-        state = state,
+        articles = articles,
         isRefreshing = isRefreshing,
         onArticleClick = onArticleClick,
-        onRefresh = { viewModel.loadHeadlines() },
+        onRefresh = { articles.refresh() },
         modifier = modifier.fillMaxSize()
     )
 
