@@ -30,8 +30,8 @@ A modern Android app built with Jetpack Compose that fetches and displays the la
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/NewsApp.git
-cd NewsApp
+git clone https://github.com/jainish01/newsPulse.git
+cd newsPulse
 ```
 
 ### 2. Setup NewsAPI Key
